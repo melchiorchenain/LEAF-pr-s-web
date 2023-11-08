@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEAF</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="images/icon.png">
+</head>
+<body>
+    <section class="sub-header3">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="progress.html">PROGRESS</a></li>
+                    <li><a href="security.html">SECURITY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="link.html">LINK</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Security</h1>
+    </section>
+    
+    
+<!---------- course ----------->
+    
+    <section class="course">
+        <h1>LEAF puts a lot of importance in cybersecurity</h1>
+        <div class="row">
+            <div class="course-col">
+                <h3>Encryption</h3>
+                <p> LEAF places a lot of importance on protecting each user's personal information, which is why the access passwords to each account are stored in the database and encrypted. Encrypting content has the advantage of making sensitive files inaccessible to outsiders. This way, if the internal network is hacked, the hacker will be unable to access any user's personal information.</p>
+                <img src="images/crypt.png">
+            </div>
+            <div class="course-col">
+                <h3>Test</h3>
+                <p> I will perform regular Penetration Testings. These tests methodically hack into LEAF's system to expose as many vulnerabilities as possible from multiple vantage points. I will also perform network testing of our host network and network devices. These tests should allow me to identify the critical vulnerabilities being used to launch cyber-attacks. </p>
+                <img src="images/testing.png">
+            </div>
+            <div class="course-col">
+                <h3>FireWall</h3>
+                <p> To protect users from any type of cybersecurity attack, I will use a firewall. A firewall is a network security device that monitors and filters incoming and outgoing network traffic based on the security policies I will have previously established. </p>
+                <img src="images/firewall.jpg">
+            </div>
+        </div>
+    </section>
+    
+    
+<!-------- footer ---------->
+
+<section class="footer1">
+        <h4>About Us</h4>
+        <p> LEAF is currently under construction, and the first version should be released in 2023. I aim to <br> have all the features developed by then.</p>
+        <a><img src="images/logo.png"></a>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>  
+    
+</body>
+</html>    

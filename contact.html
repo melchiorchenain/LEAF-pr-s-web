@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEAF</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="icon" type="image/png" href="images/icon.png">
+</head>
+<body>
+    <section class="sub-header1">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="progress.html">PROGRESS</a></li>
+                    <li><a href="security.html">SECURITY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="link.html">LINK</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Contact Us</h1>
+    </section>
+    
+    
+<!------- Contact Us ------->
+    
+    <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+33 0645724902</h5>
+                            <p>Monday to Sunday 8 Am to 6 Pm (Paris (UTC+1))</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>chenainmelchior@gmail.com</h5>
+                            <p>Email me anytime</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form method="post" action="contact-form-handler.php">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form> 
+                </div>
+            </div>
+    </section>
+    
+<!-------- footer ---------->
+
+<section class="footer1">
+        <h4>About Us</h4>
+        <p> LEAF is currently under construction, and the first version should be released in 2023. I aim to <br> have all the features developed by then.</p>
+        <a><img src="images/logo.png"></a>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    

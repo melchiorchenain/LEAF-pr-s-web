@@ -1,0 +1,165 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEAF</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="icon" type="image/png" href="images/icon.png">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="progress.html">PROGRESS</a></li>
+                    <li><a href="security.html">SECURITY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="link.html">LINK</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>   
+            <h1>Progress</h1>
+    </section>
+    
+    
+<!------- about us content -------->
+    
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h3>Sign-Up System</h3>     
+            <p> To begin LEAF, I devised a sign-up system. To do that, I created a PHP file called inscription.php and began generating a registration form in HTML. The form asks users for their last name, first name, email, password, password confirmation, and profile picture. If the user fills in everything correctly and their email does not already exist in the system, they will be registered. The form does not work if a box is empty or if the two passwords are not identical.</p>
+            <a href="https://github.com/melchiorchenain/LEAF/blob/main/inscription.php" class="hero-btn red-btn">EXPLORE SIGN-UP CODE</a>
+        </div>
+        <div class="about-col1">
+            <img src="images/signup.png">
+        </div>
+    </div>    
+</section>
+<section class="about-us3">
+    <div class="row-about">
+        <div class="about-col">
+            <h3>Login System</h3>     
+            <p> After making the registration / sign-up system, I built a login system that uses the information stored in the database, which I will develop. Indeed, to log in, I coded a form in HTML just like the sign-up form, but this time it just asks for the already-registered user to enter their email and password. They can then sign in with their information. If the information they shared is incorrect when they log in, a message appears below the login button to alert them. </p>
+            <a href="https://github.com/melchiorchenain/LEAF/blob/main/index.php" class="hero-btn red-btn">EXPLORE LOGIN CODE</a>
+        </div>
+        <div class="about-col1">
+            <img src="images/login.png">
+        </div>
+    </div>    
+</section>
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h3>Registration Database</h3>     
+            <p> I developed a registration database after coding the sign-in and login systems. The registration database that I titled User is structured to facilitate the storage, retrieval, modification, and deletion of data. It contains the user's name, last name, email, and encrypted password. The database has a final column that contains an automatically generated user ID. This ID is key to helping me build the messaging system and all the other features that track user activity. </p>
+            <a href="https://github.com/melchiorchenain/LEAF/blob/main/user.sql" class="hero-btn red-btn">EXPLORE DATABASE CODE</a>
+        </div>
+        <div class="about-col">
+            <img src="images/userdata.png">
+        </div>
+    </div>   
+</section>
+<section class="about-us3">
+    <div class="row-about">
+        <div class="about-col">
+            <h3>Connecting code to Database</h3>     
+            <p> I created a PHP file to connect my PHP code to my database, a quick but crucial step. If the connection fails, the whole media does not function. I, therefore, created a connection PHP file in which I indicated the username of my SQL files, the password to access the database, and my database&#39;s name. I also need to inform my host&#39;s name. The code depends on the host to connect to the database.</p>
+            <a href="https://github.com/melchiorchenain/LEAF/blob/main/con.php" class="hero-btn red-btn">EXPLORE CONNECTION CODE</a>
+        </div>
+        <div class="about-col1">
+            <img src="images/connection.png">
+        </div>
+    </div>   
+</section>
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h3>Discussion Forum</h3>     
+            <p> I then created the first part of what will become my website's future feed. I coded a discussion forum to allow anyone signed in to LEAF to send messages. To do that, I began by coding a form, like with the sign-up and login parts. Here, however, the form only requires the user to type the message they want to post. After that, I coded (in the same file) the system linked to the future message database. The objective here is that, as the user is signed in when they send the message, LEAF will utilize the user database to post their message along with their name, last name, and profile picture. To do that, I will apply the user ID, which allows me to identify which user sent the message. The algorithm then automatically identifies their name, last name, and profile picture and posts it with the code.</p>
+            <a href="https://github.com/melchiorchenain/LEAF/blob/main/forum.php" class="hero-btn red-btn">EXPLORE DISCUSSION FORUM CODE</a>
+        </div>
+        <div class="about-col">
+            <img src="images/forum.png">
+        </div>
+    </div>   
+</section>
+<section class="about-us3">
+    <div class="row-about">
+        <div class="about-col">
+            <h3>Message Database</h3>     
+            <p> I created the message database that links entirely to the discussion forum's code. I named it the Database Message. It is also structured to facilitate the storage, retrieval, modification, and deletion of data. It contains the message ID, text, date, and time of posting and stores the user ID. This database is the heart of the discussion forum, as it allows us to identify who posts the message. </p>
+            <a href="https://github.com/melchiorchenain/LEAF/blob/main/message.sql" class="hero-btn red-btn">EXPLORE MESSAGE CODE</a>
+        </div>
+        <div class="about-col">
+            <img src="images/message.png">
+        </div>
+    </div>   
+</section>
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h3>Logout system</h3>     
+            <p> I developed a logging-out system that allows all users to leave their leaf account with the click of a button. To code this system, I created a button so that when the user clicks on it, it destroys the current session and sends them to the login page that I named when I began the project index.php. </p>
+            <a href="https://github.com/melchiorchenain/LEAF/blob/main/logout.php" class="hero-btn red-btn">EXPLORE LOGOUT CODE</a>
+        </div>
+        <div class="about-col">
+            <img src="images/logout.png">
+        </div>
+    </div>   
+</section>
+ <section class="about-us3">
+    <div class="row-about">
+        <div class="about-col">
+            <h3>Login Page New Design</h3>     
+            <p> When I first coded the user interface for my leaf project, I did not concentrate on the quality of the design or try to make the interface more interactive. The reason I chose to do that because I only used the frontend interface to test the work I was doing in the backend and in this case, make sure that the sign up system and login systems were working in the way I wanted. So I decided to dive int o the design off the login interface now  that all the backend interface for the login system is finish. To do an interactive and clean interface that fits with LEAF's design goals, I made a toggle menu that proposes eather a Login or a Signup button. This allows all users to choose easely choose without searching what they want to do when they first arrive on the media. To do that, I linked the code to a javascript file that analyses the buttons being prepessed and makes the propper toggle appear on the page. I then added my initial  work with the fill in login boxes and redisigned them to make the interface look cleanerand more readable. </p>
+            <a href="https://github.com/melchiorchenain/LEAF/blob/main/p1.html" class="hero-btn red-btn">EXPLORE NEW DESIGN CODE</a>
+        </div>
+        <div class="about-col">
+            <img src="images/ndesign.png">
+        </div>
+    </div>
+  </section>
+  <section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h3>Sign Up Page New Design</h3>     
+            <p> After redesigning the Login page, I re-designed the second part of this first page for the Signing Up to LEAF. I initially had done the same as on the login page for the signup page. I had initially coded an interface to test my work. Now that all the database and backend work has been done for the Sign Up page, I began redesigning it using the toggle menu and the javascript file from the Login page. I coded on the same page a second form with the same options as in the table I posted last time. I then re-designed all the boxes and the buttons. Finally, I had to dive into the javascript file to make sure that when the user presses the sign-up button, the login form disappears and the signup form shows up. To do that, I used the classlist component on javascript. </p>
+            <a href="https://github.com/melchiorchenain/LEAF/blob/main/p1.html" class="hero-btn red-btn">EXPLORE NEW DESIGN CODE</a>
+        </div>
+        <div class="about-col">
+            <img src="images/n2design.png">
+        </div>
+    </div>   
+</section>
+    
+<!-------- footer ---------->
+
+<section class="footer1">
+        <h4>About Us</h4>
+        <p>LEAF is currently under construction, and the first version should be released in 2023. I aim to <br> have all the features developed by then.</p>
+        <a><img src="images/logo.png"></a>
+    
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    
